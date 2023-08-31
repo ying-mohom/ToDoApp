@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Counter from "./Counter";
+import ConditionalComponent from "./ConditionalComponent";
+import Product from "./Product";
+import Form from "./Form";
+import Todo from "./Todo"
+import Header from './Header';
+import TestReducer from "./TestReducer";
+import Context from './Context';
+import "./ToDo.css";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className='App'>
+      <Header />
+      <Todo />
     </div>
+    // <Context.Provider value="Hello World">Context Api
+    //   <Form />
+    // </Context.Provider>
+
   );
 }
 
